@@ -5,20 +5,20 @@ body {
     font-family: sans-serif;
     color: #0a0a23;
 }
-/* para ocultar el elemento sr-only */
+/* para ocultar el elemento sr-only */ /* important es para que no se sobreescriban */
 span[class~="sr-only"] {
-    border: 0;
+    border: 0 !important;
 
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    -webkit-clip-path: inset(50%);
-    width: 1px;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    -webkit-clip-path: inset(50%) !important;
+    width: 1px !important;
     height: 1px;
-    overflow: hidden;
-    white-space: nowrap;
-    position: absolute;
-    padding: 0;
-    margin: -1px;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    position: absolute !important;
+    padding: 0 !important;
+    margin: -1px !important;
 }
 
 h1 {
@@ -60,7 +60,23 @@ section {
     font-weight: bold;
     width: 4.5rem;
     text-align: right;
+    
 }
+.table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;
+    
+}
+span{
+    font-weight: normal;
+
+}
+table {
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+  }
 
 
 
