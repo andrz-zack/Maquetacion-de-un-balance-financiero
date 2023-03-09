@@ -5,3 +5,12 @@ body {
     font-family: sans-serif;
     color: #0a0a23;
 }
+/* para ocultar el elemento sr-only */
+span[class~="sr-only"] {
+    border: 0;
+}
+span[class~="sr-only"]{
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    -webkit-clip-path: inset(50%);
+}
