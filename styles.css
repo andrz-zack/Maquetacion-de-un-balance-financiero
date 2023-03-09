@@ -88,6 +88,12 @@ table caption{
 
 
 }
+tbody td {
+    width: 100vw;
+    max-width: 4rem;
+    min-width: 4rem;
+
+}
 
 
 
